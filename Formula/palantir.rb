@@ -5,23 +5,23 @@
 class Palantir < Formula
   desc "TUI for AWS CloudFormation & ECS exploration with port forwarding"
   homepage "https://github.com/erdemcemal/palantir"
-  version "0.4.0"
+  version "0.4.1"
   license "MIT"
 
   depends_on "awscli" => :optional
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/erdemcemal/palantir/releases/download/v0.4.0/palantir_0.4.0_darwin_amd64.tar.gz"
-      sha256 "e8cd78b209c9116e45cdab93018f01328c407f9900a3aa7d74b5a5c40b54f599"
+      url "https://github.com/erdemcemal/palantir/releases/download/v0.4.1/palantir_0.4.1_darwin_amd64.tar.gz"
+      sha256 "05f715d550f4b5442bd78c93c243ca727e4aab9a721fe96b632c74b76b20d85c"
 
       def install
         bin.install "palantir"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/erdemcemal/palantir/releases/download/v0.4.0/palantir_0.4.0_darwin_arm64.tar.gz"
-      sha256 "950e778ef2bbe5451c6256f665b59ca3946fd4a2a22230638d06897df917ff33"
+      url "https://github.com/erdemcemal/palantir/releases/download/v0.4.1/palantir_0.4.1_darwin_arm64.tar.gz"
+      sha256 "0fc451024032e07c90474c5caed1d97d44b41700143cfd8bec3d932e4e2e19f7"
 
       def install
         bin.install "palantir"
@@ -31,15 +31,15 @@ class Palantir < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/erdemcemal/palantir/releases/download/v0.4.0/palantir_0.4.0_linux_amd64.tar.gz"
-      sha256 "64c274c73e768d8741fd4a91d36d1d835872f532dfca922e47a0bcff3349e843"
+      url "https://github.com/erdemcemal/palantir/releases/download/v0.4.1/palantir_0.4.1_linux_amd64.tar.gz"
+      sha256 "711d2298bd342365ee120c55c1992218a3e8073e974e9da0fe38c6948bbc1160"
       def install
         bin.install "palantir"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/erdemcemal/palantir/releases/download/v0.4.0/palantir_0.4.0_linux_arm64.tar.gz"
-      sha256 "9b608e48adf726a832ae16d544823696e0fffbdf1c048240ea36a1bb4c0b2d2a"
+      url "https://github.com/erdemcemal/palantir/releases/download/v0.4.1/palantir_0.4.1_linux_arm64.tar.gz"
+      sha256 "8b842d279763be0fcf675f4d1432da6430cf68c70e24578ae4bc46e2741d3c3a"
       def install
         bin.install "palantir"
       end

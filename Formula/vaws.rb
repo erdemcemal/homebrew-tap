@@ -5,23 +5,23 @@
 class Vaws < Formula
   desc "TUI for AWS CloudFormation & ECS exploration with port forwarding"
   homepage "https://github.com/erdemcemal/vaws"
-  version "1.1.3"
+  version "1.2.0"
   license "MIT"
 
   depends_on "awscli" => :optional
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/erdemcemal/vaws/releases/download/v1.1.3/vaws_1.1.3_darwin_amd64.tar.gz"
-      sha256 "ab8b05122bc07fdf7d645fea7f1dc238c47b7ab9248bf62321a1cb8584a37a15"
+      url "https://github.com/erdemcemal/vaws/releases/download/v1.2.0/vaws_1.2.0_darwin_amd64.tar.gz"
+      sha256 "1b22740d22599ab7d487b1deec89a099d4e5048ee27705269b6108a5976fbb3a"
 
       def install
         bin.install "vaws"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/erdemcemal/vaws/releases/download/v1.1.3/vaws_1.1.3_darwin_arm64.tar.gz"
-      sha256 "d65b197d34dff30a32a93107a4dec709ef59cae1077ad5ae5433d39711f863d4"
+      url "https://github.com/erdemcemal/vaws/releases/download/v1.2.0/vaws_1.2.0_darwin_arm64.tar.gz"
+      sha256 "1c95adc263a1add498143f42ed470f2bdaf79ed6cb4db996a1e6d1535d87cbac"
 
       def install
         bin.install "vaws"
@@ -31,15 +31,15 @@ class Vaws < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/erdemcemal/vaws/releases/download/v1.1.3/vaws_1.1.3_linux_amd64.tar.gz"
-      sha256 "e78eee3277f6a47bfa19d0b2d3dea115c522487801dd6fe5e6b3e528184dfabf"
+      url "https://github.com/erdemcemal/vaws/releases/download/v1.2.0/vaws_1.2.0_linux_amd64.tar.gz"
+      sha256 "0a8f4c8456fc83fc572de48b5ab4aa2b0a5c77b5bba7b268b44f9a60f101dde1"
       def install
         bin.install "vaws"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/erdemcemal/vaws/releases/download/v1.1.3/vaws_1.1.3_linux_arm64.tar.gz"
-      sha256 "57940f39fc209ab0470d24df7dcdc9fd324568a3e4b994698d492651638e1719"
+      url "https://github.com/erdemcemal/vaws/releases/download/v1.2.0/vaws_1.2.0_linux_arm64.tar.gz"
+      sha256 "c07d62439a9d34b1c84529260cfc5d134ef535fa046e90fe7503eea95d22f8f6"
       def install
         bin.install "vaws"
       end
